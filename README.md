@@ -1,6 +1,8 @@
 # 📊 Telco Customer Churn Analysis Dashboard
+<p align="center">
+  <img src="Screenshot 2026-07-18 122623.png" alt="Disney+ Hotstar Dashboard" width="100%">
+</p>
 
-![Dashboard Preview](Screenshot 2026-07-18 122623.png)
 
 ## 📌 Overview
 
