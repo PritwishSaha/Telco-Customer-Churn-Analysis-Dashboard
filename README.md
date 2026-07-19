@@ -1,6 +1,6 @@
 # 📊 Telco Customer Churn Analysis Dashboard
 
-![Dashboard Preview](dashboard-preview.png)
+![Dashboard Preview](Screenshot 2026-07-18 122623.png)
 
 ## 📌 Overview
 
