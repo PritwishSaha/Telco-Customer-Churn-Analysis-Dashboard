@@ -1,39 +1,62 @@
 # 📊 Telco Customer Churn Analysis Dashboard
 
-This project analyzes customer churn patterns in a telecommunications company using **Python** for data cleaning and **Power BI** for interactive data visualization. The objective is to identify the key factors influencing customer churn and provide actionable business insights to improve customer retention.
+![Dashboard Preview](dashboard-preview.png)
 
-### 🔧 Tools & Technologies
+## 📌 Overview
 
-* Python (Pandas, NumPy)
-* Google Colab
-* Power BI
-* DAX
-* Git & GitHub
+This project analyzes customer churn for a telecom company to understand **why customers leave** and **which factors are most associated with churn**. Raw data was sourced from Kaggle, cleaned and processed in Google Colab, and visualized as an interactive dashboard in Power BI.
 
-### 📌 Project Workflow
+## 🧰 Tools & Technologies
 
-* Cleaned and preprocessed the Telco Customer Churn dataset using Python.
-* Performed data quality checks and handled missing values.
-* Imported the cleaned dataset into Power BI.
-* Created DAX measures for key performance indicators (KPIs).
-* Built an interactive dashboard with filters and business-focused visualizations.
+| Stage | Tool |
+|---|---|
+| Data Source | Kaggle |
+| Data Cleaning & Preprocessing | Google Colab (Python, Pandas) |
+| Dashboard & Visualization | Power BI |
 
-### 📊 Key KPIs
+## 🔄 Project Workflow
 
-* Total Customers
-* Total Churned Customers
-* Customer Churn Rate
+1. **Data Collection** — Downloaded the Telco Customer Churn dataset from Kaggle.
+2. **Data Cleaning** — Cleaned and prepared the data in Google Colab:
+   - Handled missing/null values
+   - Fixed data types (e.g., `TotalCharges` converted to numeric)
+   - Removed duplicates
+   - Standardized categorical values
+   - Exported the cleaned dataset as CSV for Power BI
+3. **Dashboard Design** — Built an interactive dashboard in Power BI to visualize churn patterns.
+4. **Insights** — Identified key drivers of churn using visuals and KPIs.
 
-### 📈 Dashboard Insights
+## 📈 Dashboard Features
 
-* Customer Churn by Contract Type
-* Customer Churn by Internet Service
-* Customer Churn Trend by Tenure
-* Customer Churn by Payment Method
-* Monthly Charges vs Total Charges by Churn Status
+- **KPI Cards** — Total Customers, Churned Customers, and Churn Rate at a glance
+- **Churn by Contract Type** — Compares churn across month-to-month, one-year, and two-year contracts
+- **Churn by Internet Service** — Donut chart showing churn share across Fiber optic, DSL, and No internet service
+- **Churn by Payment Method** — Treemap breakdown of churn by payment type
+- **Churn Trend by Tenure** — Line chart showing how churn count changes with customer tenure
+- **Monthly Charges vs Total Charges** — Scatter plot showing the relationship between monthly and total charges for churned customers
 
-### 💡 Business Value
+## 🔑 Key Insights
 
-The dashboard helps stakeholders understand the primary drivers of customer churn, identify high-risk customer segments, and support data-driven retention strategies.
+- Customers on **month-to-month contracts** churn at a much higher rate than those on longer-term contracts.
+- **Fiber optic** internet service users show a higher churn share compared to DSL users.
+- Churn is highest among customers with **low tenure**, dropping sharply as tenure increases — indicating early-stage customers are at greater risk.
+- Customers paying via **electronic check** show a notably higher churn count than other payment methods.
 
-⭐ If you found this project helpful, feel free to star the repository and share your feedback!
+## 📁 Dataset
+
+- **Source:** [Kaggle – Telco Customer Churn](https://www.kaggle.com/)
+- **Records:** 7,043 customers
+- **Target Variable:** `Churn` (Yes/No)
+
+## 🚀 How to Use
+
+1. Download the cleaned dataset / raw dataset from Kaggle.
+2. Open the `.ipynb` notebook in Google Colab to review the data cleaning steps.
+3. Open the `.pbix` file in Power BI Desktop to explore the dashboard interactively.
+
+## 🙋 About
+
+This project was built as part of a data analyst portfolio to demonstrate skills in data cleaning (Python/Pandas), and dashboard/report building (Power BI).
+
+---
+⭐ Feel free to fork this project or reach out if you have suggestions for improvement!
